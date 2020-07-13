@@ -11,7 +11,9 @@ freetype2-cleartype (AUR) for font-rendering
 fontconfig for OSX-like font-emboldening. Check the XML config.
 xfce4-panel for the beautiful workspace previews.
 
-
+Browser : firefox
+Editor: code
+Terminal: alacritty 
 TODO:
 dunst notifs
 more powerful shortcuts for utility control.
