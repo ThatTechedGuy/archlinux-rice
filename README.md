@@ -15,3 +15,4 @@ xfce4-panel for the beautiful workspace previews.
 TODO:
 dunst notifs
 more powerful shortcuts for utility control.
+fix repo folder structure xD
