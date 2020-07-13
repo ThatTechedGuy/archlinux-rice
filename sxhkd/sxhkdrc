@@ -1,0 +1,46 @@
+# To spawn the terminal
+mod4 + Return
+  alacritty
+
+# To spawn the browser
+mod4 + b
+  firefox
+
+# To spawn the editor
+mod4 + c
+  code
+
+# make sxhkd reload its configuration files:
+mod4 + r
+    pkill -USR1 -x sxhkd
+
+# for dmenu
+mod4 + d
+  dmenu_run
+
+# quit/restart bspwm
+shift + mod4 + {l,r}
+  bspc {quit,wm -r}
+
+
+# focus or send to the given desktop
+mod4 + {_,shift + }{1-9,0}
+  bspc {desktop -f,node -d} '^{1-9,10}'
+
+# close and kill
+mod4 + shift + q
+    bspc node -{c,k}
+
+# add these lines in your sxhkdrc file
+# change window states
+alt + {t,shift + t,s,f}
+  bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+
+
+
+# swap the current node and the biggest node
+mod4 + shift + Return
+	bspc node -s biggest
+
+mod4 + bracket{left,right}
+	bspc desktop -f {prev,next}.local
