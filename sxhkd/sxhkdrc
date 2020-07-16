@@ -6,6 +6,10 @@ mod4 + Return
 mod4 + b
   firefox
 
+# To spawn the notification center
+mod4 + n
+  kill -s USR1 $(pidof deadd-notification-center)
+
 # To spawn the editor
 mod4 + c
   code
